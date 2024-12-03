@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuraQ - Quantum Security Solutions</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and base styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://example.com/technology-background.jpg'); /* Substitua pelo link da sua imagem de fundo */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Header section */
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 3px solid #00bcd4; /* Nova cor azul */
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            color: #00bcd4;
+        }
+
+        header nav {
+            margin-top: 15px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 25px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        /* Main content section */
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+            background-color: rgba(18, 18, 18, 0.8); /* Escurecer a seção */
+            backdrop-filter: blur(10px); /* Efeito de desfoque */
+        }
+
+        .main-container h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #00bcd4;
+        }
+
+        .container {
+           
+            border-radius: 15px;
+            padding: 40px;
+            width: 80%;
+            max-width: 700px;
+            margin-bottom: 30px;
+            
+        }
+
+        .container h3 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            color: #00bcd4;
+        }
+
+        .container p {
+            font-size: 1.1em;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            background: #00bcd4;
+            color: #12121200;
+            margin-top: 90px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+        }
+
+        .contact-info a {
+            color: #121212;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styles */
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 1.1em;
+        }
+
+        /* New section for Technology */
+        .technology-section {
+            background: #1c1c1c;
+            padding: 60px 20px;
+            margin-top: 50px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .technology-section h3 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00bcd4;
+            text-align: center;
+        }
+
+        .technology-section p {
+            font-size: 1.1em;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .service-section {
+            background: #222;
+            padding: 60px 20px;
+            margin-top: 50px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .service-section h3 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00bcd4;
+            text-align: center;
+        }
+
+        .service-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-section ul li {
+            font-size: 1.1em;
+            color: #ccc;
+            margin: 10px 0;
+        }
+
+        /* New "Why Choose Us" Section */
+        .choose-us-section {
+            background: #333;
+            padding: 60px 20px;
+            margin-top: 50px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .choose-us-section h3 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00bcd4;
+            text-align: center;
+        }
+
+        .choose-us-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .choose-us-section ul li {
+            font-size: 1.1em;
+            color: #ccc;
+            margin: 10px 0;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            background: #1c1c1c;
+            padding: 60px 20px;
+            margin-top: 50px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .testimonials-section h3 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00bcd4;
+            text-align: center;
+        }
+
+        .testimonials-section .testimonial {
+            font-size: 1.1em;
+            color: #ccc;
+            margin-bottom: 20px;
+            border-left: 5px solid #00bcd4;
+            padding-left: 20px;
+        }
+
+        .testimonials-section .testimonial .author {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        /* Add space below the contact section to avoid overlap */
+        .contact-info {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>SecuraQ</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <h2>SecuraQ: Quantum Security for the Future</h2>
+
+        <div class="container">
+            <h3>Our Story</h3>
+            <p>Founded by passionate innovators in the field of quantum computing, SecuraQ was established with a singular mission: to provide the most secure data encryption solutions for businesses and individuals in the age of quantum computing.</p>
+            <p>Our team of experts works tirelessly to stay ahead of emerging threats, ensuring that your sensitive data remains safe now and in the future.</p>
+        </div>
+
+        <div class="container">
+            <h3>Our Vision</h3>
+            <p>At SecuraQ, we believe that quantum computing will redefine the landscape of cybersecurity. As threats evolve, we are committed to developing groundbreaking encryption technology that leverages the power of quantum mechanics, ensuring data privacy and integrity in the most secure form.</p>
+        </div>
+
+        <div class="technology-section">
+            <h3>Our Technology</h3>
+            <p>At the heart of our solutions is the power of quantum computing. Using quantum cryptography, we ensure that data is encoded in a way that is virtually impossible to decrypt without the correct key. This method is far superior to traditional encryption and offers unparalleled security for future-proofing your data.</p>
+        </div>
+
+        <div class="service-section">
+            <h3>Our Services</h3>
+            <ul>
+                <li><strong>Quantum Encryption:</strong> Implementing quantum encryption to protect sensitive data across all platforms.</li>
+                <li><strong>Data Privacy Solutions:</strong> Custom-tailored solutions to ensure maximum privacy for your business and customers.</li>
+                <li><strong>Quantum Security Audits:</strong> In-depth audits to assess and enhance the current security infrastructure of organizations.</li>
+                <li><strong>Consulting and Training:</strong> Providing expert consulting services to help businesses prepare for quantum computing and its security implications.</li>
+            </ul>
+        </div>
+
+        <div class="choose-us-section">
+            <h3>Why Choose Us?</h3>
+            <ul>
+                <li><strong>Advanced Quantum Encryption:</strong> Our encryption is designed for the future, ensuring long-term protection against evolving threats.</li>
+                <li><strong>Expert Team:</strong> We are pioneers in the quantum cybersecurity field, with a team of world-class experts.</li>
+                <li><strong>Customized Solutions:</strong> We offer tailored solutions that meet the unique security needs of your business.</li>
+                <li><strong>Proven Track Record:</strong> Our clients trust us for secure, reliable, and future-proof solutions.</li>
+            </ul>
+        </div>
+
+        <div class="testimonials-section">
+            <h3>Client Testimonials</h3>
+            <div class="testimonial">
+                <p>"SecuraQ's quantum encryption technology is a game-changer for our company. Our data is now more secure than ever, and we have peace of mind knowing we're ahead of the curve in terms of security." <span class="author">- John D., CEO of TechSolutions</span></p>
+            </div>
+            <div class="testimonial">
+                <p>"The team at SecuraQ helped us implement state-of-the-art security solutions. Their expertise in quantum cryptography is unmatched. We feel confident our data is in safe hands." <span class="author">- Emily W., Chief Information Officer at FinanceCorp</span></p>
+            </div>
+        </div>
+
+        <div class="container">
+            <h3>Contact Information</h3>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> +1 (408) 555-1234</p>
+                <p><strong>Address:</strong> 1234 Silicon Valley Blvd, Suite 567, Mountain View, CA 94043, USA</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 SecuraQ. All rights reserved.</p>
+    </footer>
+</body>
+</html>
